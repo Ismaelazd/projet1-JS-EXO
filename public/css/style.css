@@ -54,20 +54,17 @@ body section h2 {
   margin: 45px auto;
 }
 
-input {
+#input1Ex4:focus {
+  outline: none;
+}
+
+#input1Ex4 {
   display: flex;
   flex-direction: columns;
   margin: 10px auto;
   padding: 10px;
   border-radius: 25px;
   color: white;
-}
-
-input:focus {
-  outline: none;
-}
-
-#input1Ex4 {
   border: 0;
   background-color: #769fff;
 }
@@ -76,6 +73,28 @@ input:focus {
   border: 0;
   color: #769fff;
   background-color: white;
+}
+
+#input1Ex5 {
+  padding: 10px;
+  border-radius: 25px;
+  color: white;
+  border: 0;
+  background-color: #769fff;
+}
+
+#input1Ex5:focus {
+  outline: none;
+}
+
+#input1Ex5:hover {
+  border: 0;
+  color: #769fff;
+  background-color: white;
+}
+
+#div5 {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

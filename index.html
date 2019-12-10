@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <h1 class="text-white ">Javascript DOM</h1>
@@ -23,7 +25,7 @@
     </header>
 
     <section id="Page1" class="page" style="display: none">
-        
+
         <h2>Le titre à modifié</h2>
         <p>Liste des propriétés et méthodes à retrouver dans la documentation : </p>
         <ul>
@@ -38,18 +40,62 @@
         <p>Changer la couleur du h2(a couleur que vous voulez)</p>
         <p>Ajoutez une classe background bootstrap au h2</p>
 
-       <input type="button" value="Chnager le titre">
+        <input type="button" value="Changer le titre">
     </section>
 
-    <section id="Page1" class="page" style="">
-        
-            <h2 id="h2ex2">Welcome inconnu</h2>
-            <p>Ecrivez dans l'input ci-dessous le nom de la personne que vous voulez acceuillir.<br>Lorsque vous cliquez sur le bouton 'GO' le nom que vous avez entré dans l'input sera mis dans le h2 et l'input sera alors vide.<br>Attention, interdiction de toucher au html !</p>
-            
-           <input class="inputEx2" type="texte" placeholder="Entrez un nom"><input class="btnEx2" type="button" value="GO">
-        </section>
-    
-    
+    <section id="Page2" class="page" style="display: none">
+
+        <h2 id="h2ex2"></h2>
+        <p>Mettre un écouteur sur les boutons nav et changer la panel en conséquences</p>
+
+
+    </section>
+
+    <section id="Page3" class="page" style="display: none">
+
+        <h2 id="h2ex3">Welcome inconnu</h2>
+        <p>Ecrivez dans l'input ci-dessous le nom de la personne que vous voulez acceuillir.<br>Lorsque vous cliquez sur
+            le bouton 'GO' le nom que vous avez entré dans l'input sera mis dans le h2 et l'input sera alors
+            vide.<br>Attention, interdiction de toucher au html !</p>
+
+        <input class="inputEx3" type="texte" placeholder="Entrez un nom"><input class="btnEx3" type="button" value="GO">
+    </section>
+
+    <section id="Page4" class="page" style="display: none">
+
+        <h2 id="h2ex4">Déplacer les éléments</h2>
+
+        <div id="block4" class="row ">
+            <div class="col-4 bg-primary mx-3">
+                <div id="petitBlok">
+
+                </div>
+            </div>
+            <div class="col-4 bg-primary mx-3">
+
+            </div>
+        </div>
+
+        <div id="input4">
+            <input id="input1Ex4" type="button" value="Changer de place">
+
+            <button type="button" class="btn btn-primary">
+                Nombre de click <span id="nbClick" class="badge badge-light">0</span>
+            </button>
+        </div>
+
+    </section>
+
+    <section id="Page5" class="page" style="">
+
+        <h2 id="h2ex5">Générer des éléments du DOM</h2>
+        <p>Clique sur le bouton générer des oeufs.</p>
+
+    </section>
+
+
+
     <script type="module" src="./public/js/main.js"></script>
 </body>
+
 </html>

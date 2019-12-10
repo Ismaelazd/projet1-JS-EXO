@@ -1,0 +1,35 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+.acti {
+  background-color: #3b8eec;
+}
+.acti a {
+  color: #ffff;
+}
+
+body {
+  margin: 2% 10%;
+}
+body header h1 {
+  text-align: center;
+  background-color: #3b8eec;
+}
+body header ul {
+  list-style: none;
+}
+body header ul li {
+  text-decoration: none;
+}
+body header ul li a:hover {
+  text-decoration: none;
+}
+body section {
+  padding: 5% 4%;
+  background-color: #bebebe;
+  margin-bottom: 10px;
+}
+body section h2 {
+  margin: 0 0 13px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@ liens.forEach(elem => {
 })
 
 
-
+exo2()
 // function show(elementID) {
 //     // try to find the requested page and alert if it's not found
 //     var ele = document.getElementsByClassName(elementID)[0];//Exercic 1 

@@ -24,6 +24,7 @@ liens.forEach(elem => {
 
 exo3()
 exo5()
+exo6()
 // function show(elementID) {
 //     // try to find the requested page and alert if it's not found
 //     var ele = document.getElementsByClassName(elementID)[0];//Exercic 1 

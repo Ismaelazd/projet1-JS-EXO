@@ -97,4 +97,12 @@ body section h2 {
   margin-top: 30px;
 }
 
+#Page6 h3 {
+  margin: 15px 0;
+}
+#Page6 .form-control {
+  width: 10%;
+  display: inline;
+}
+
 /*# sourceMappingURL=style.css.map */

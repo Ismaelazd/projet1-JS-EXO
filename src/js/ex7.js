@@ -7,6 +7,7 @@ function exo7() {
     let checkbox;
     let span;
     let close;
+    let hr;
 
     function createElem() {
         div71 = document.createElement('div')
@@ -14,6 +15,7 @@ function exo7() {
         checkbox = document.createElement('input');
         span = document.createElement('span')
         close = document.createTextNode("\u00D7");
+        hr = document.createElement('hr')
     }
 
     function addElem() {
@@ -25,6 +27,7 @@ function exo7() {
         div71.appendChild(span)
         div71.classList.add('div71')
         div.appendChild(div71)
+        div.appendChild(hr)
     }
 
     document.addEventListener('keypress', event => {

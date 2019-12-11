@@ -6,7 +6,7 @@ function exo3(){
     
     btn.addEventListener('click', ()=>{
         span.innerText = input.value
-        input.value=""
+        input.value= ""
     })
 
 };

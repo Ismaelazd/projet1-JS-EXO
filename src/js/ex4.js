@@ -8,7 +8,7 @@ let nbClick = document.getElementById('nbClick')
 let cpt = 0
 btn.addEventListener('click',event =>{
     cpt++
-
+<
     mesDivs[0].children[0].classList.toggle('petitBlok')
     mesDivs[1].children[0].classList.toggle('petitBlok')
 

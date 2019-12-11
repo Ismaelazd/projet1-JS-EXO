@@ -7,6 +7,9 @@ body header h1 {
   text-align: center;
   background-color: #3b8eec;
 }
+body header ul a:hover {
+  text-decoration: none;
+}
 body section {
   padding: 5% 4%;
   background-color: #bebebe;
@@ -59,19 +62,18 @@ body section h2 {
   background-color: white;
 }
 
-#input1Ex5 {
+.inputs5 input {
+  margin: 0 15px 0 0;
   padding: 10px;
   border-radius: 25px;
   color: white;
   border: 0;
   background-color: #769fff;
 }
-
-#input1Ex5:focus {
+.inputs5 input:focus {
   outline: none;
 }
-
-#input1Ex5:hover {
+.inputs5 input:active {
   border: 0;
   color: #769fff;
   background-color: white;
@@ -151,6 +153,37 @@ body section h2 {
 }
 #calculette .btnCalc button:focus {
   outline: none;
+}
+
+#inputs7 {
+  margin-top: 15px;
+}
+#inputs7 input {
+  border: solid #3a73f6 2px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  color: #3a73f6;
+  background-color: transparent;
+}
+#inputs7 input:hover {
+  background-color: #3a73f6;
+  color: white;
+}
+#inputs7 input:focus {
+  outline: none;
+}
+
+.div71 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.div71 p {
+  flex: 1;
+  margin: 0;
+  padding: 0 0 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

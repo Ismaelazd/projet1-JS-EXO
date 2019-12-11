@@ -30,13 +30,18 @@ function exo7() {
         div.appendChild(hr)
     }
 
-    document.addEventListener('keypress', event => {
+    todo.addEventListener('focus', () => {
+        document.addEventListener('keypress', event => {
 
-        if (event.key == 'Enter') {
-            createElem()
-            addElem()
-            todo.value = ''
-        }
+            if (event.key == 'Enter') {
+                createElem()
+                addElem()
+                todo.value = ''
+            }
+        })
+    })
+    todo.addEventListener('focusout', () => {
+
     })
 
 }

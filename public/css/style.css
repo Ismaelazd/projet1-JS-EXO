@@ -19,6 +19,25 @@ body section h2 {
   margin: 0 0 13px 0;
 }
 
+.btnEx3 {
+  border: 1px solid #3a73f6;
+  border-radius: 50%;
+  margin-left: 10px;
+  padding: 5px;
+  color: #3a73f6;
+  background-color: white;
+}
+
+.btnEx3:hover {
+  background-color: #3a73f6;
+  color: white;
+  border: 1px solid white;
+}
+
+.btnEx3:focus {
+  outline: none;
+}
+
 #block4 {
   display: flex;
   justify-content: space-around;

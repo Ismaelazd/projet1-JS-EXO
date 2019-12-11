@@ -1,27 +1,11 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
-.acti {
-  background-color: #3b8eec;
-}
-.acti a {
-  color: #ffff;
-}
-
 body {
   margin: 2% 10%;
 }
 body header h1 {
   text-align: center;
   background-color: #3b8eec;
-}
-body header ul {
-  list-style: none;
-}
-body header ul li {
-  text-decoration: none;
-}
-body header ul li a:hover {
-  text-decoration: none;
 }
 body section {
   padding: 5% 4%;
@@ -39,10 +23,10 @@ body section h2 {
 #block4 div {
   display: flex;
   height: 30vh;
-  justify-content: center;
+  justify-content: space-around;
   align-self: center;
 }
-#block4 div #petitBlok {
+#block4 div .petitBlok {
   display: flex;
   height: 50px;
   width: 50px;
@@ -102,7 +86,68 @@ body section h2 {
 }
 #Page6 .form-control {
   width: 10%;
-  display: inline;
+  display: inline-block;
+}
+
+#calculette {
+  margin: 50px;
+  display: inline-block;
+  background-color: #353535;
+  padding: 15px;
+}
+#calculette input {
+  border: 0;
+  width: 100%;
+  background-color: #0000003f;
+}
+#calculette input:focus {
+  outline: none;
+}
+#calculette .btnCalc {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#calculette .btnCalc button {
+  margin: 10px;
+  border-radius: 50%;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #769fff;
+  border: 0;
+  color: #02309b;
+}
+#calculette .btnCalc #reset {
+  background-color: #ff7676;
+  color: #9b0202;
+}
+#calculette .btnCalc #reset:active {
+  background-color: #f7c1c1;
+  color: white;
+}
+#calculette .btnCalc #egal {
+  background-color: #a1ff76;
+  color: #199b02;
+}
+#calculette .btnCalc #egal:active {
+  background-color: #d2f7c1;
+  color: white;
+}
+#calculette .btnCalc .sign {
+  background-color: #9b9b99;
+  color: #ffffff;
+}
+#calculette .btnCalc .sign:active {
+  background-color: #2e2e2d;
+  color: white;
+}
+#calculette .btnCalc button:active {
+  background-color: #c1d1f7;
+  color: white;
+}
+#calculette .btnCalc button:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

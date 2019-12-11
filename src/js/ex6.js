@@ -1,5 +1,9 @@
 function exo6(){
 
+// Niveau 1
+//----------------------------------------
+
+
     let input1= document.getElementsByClassName('form-control')[0]
     let input2 = document.getElementsByClassName('form-control')[1]
     let btn = document.getElementsByClassName('btn')[2]
@@ -24,6 +28,14 @@ function exo6(){
                 break
         }
     })
+
+
+// Niveau 2
+//----------------------------------------    
+
+
+
+
 
 }
 export {exo6};

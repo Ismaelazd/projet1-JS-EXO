@@ -1,3 +1,4 @@
+
 function exo1(){
     let titre = document.querySelector('h2')
     let btn1 = document.querySelector('input')

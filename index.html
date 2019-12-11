@@ -15,16 +15,16 @@
         <h1 class="text-white ">Javascript DOM</h1>
 
         <ul class="row my-5 ul1">
-            <li class="col-3"><a href="">Exercice 1</a></li>
-            <li class="col-3"><a href="">Exercice 2</a></li>
-            <li class="col-3"><a href="">Exercice 3</a></li>
-            <li class="col-3"><a href="">Exercice 4</a></li>
-            <li class="col-3"><a href="">Exercice 5</a></li>
-            <li class="col-3"><a href="">Exercice 6</a></li>
+            <a class="col-3 text-primary bg-white" href="#">Exercice 1</a>
+            <a class="col-3 text-primary bg-white" href="#">Exercice 2</a>
+            <a class="col-3 text-primary bg-white" href="#">Exercice 3</a>
+            <a class="col-3 text-primary bg-white" href="#">Exercice 4</a>
+            <a class="col-3 text-primary bg-white" href="#">Exercice 5</a>
+            <a class="col-3 text-primary bg-white" href="#">Exercice 6</a>
         </ul>
     </header>
 
-    <section id="Page1" class="page" style="display: none">
+    <section id="Page1" class="page" style="">
 
         <h2>Le titre à modifié</h2>
         <p>Liste des propriétés et méthodes à retrouver dans la documentation : </p>
@@ -43,7 +43,7 @@
         <input type="button" value="Changer le titre">
     </section>
 
-    <section id="Page2" class="page" style="display: none">
+    <section id="Page2" class="page" style="">
 
         <h2 id="h2ex2"></h2>
         <p>Mettre un écouteur sur les boutons nav et changer la panel en conséquences</p>
@@ -51,7 +51,7 @@
 
     </section>
 
-    <section id="Page3" class="page" style="display: none">
+    <section id="Page3" class="page" style="">
 
         <h2 id="h2ex3">Welcome inconnu</h2>
         <p>Ecrivez dans l'input ci-dessous le nom de la personne que vous voulez acceuillir.<br>Lorsque vous cliquez sur
@@ -66,13 +66,15 @@
         <h2 id="h2ex4">Déplacer les éléments</h2>
 
         <div id="block4" class="row ">
-            <div class="col-4 bg-primary mx-3">
-                <div id="petitBlok">
+            <div class="col-4 bg-primary mx-3 block41">
+                <div class="petitBlok">
 
                 </div>
             </div>
-            <div class="col-4 bg-primary mx-3">
+            <div class="col-4 bg-primary mx-3 block41">
+                <div class="">
 
+                </div>
             </div>
         </div>
 
@@ -111,6 +113,44 @@
         </button>
         <span id="response" class="ml-2">?</span>
         <h3>Niveau 2</h3>
+        <div id="calculette">
+            <div class="outpout">
+                <input type="text" class="mb-0">
+                <hr class="my-0">
+                <input type="text" class="mt-0">
+            </div>
+
+
+            <hr>
+            <div class="btnCalc">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="sign">+</button>
+            </div>
+
+            <div class="btnCalc">
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="sign">-</button>
+            </div>
+            <div class="btnCalc">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="sign">*</button>
+            </div>
+            <div class="btnCalc">
+                <button id="reset">C</button>
+                <button class="number">0</button>
+                <button id="egal">=</button>
+                <button class="sign">/</button>
+            </div>
+        </div>
+
+        </div>
+
     </section>
 
 

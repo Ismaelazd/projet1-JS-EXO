@@ -5,42 +5,46 @@ import {exo4} from '../../src/js/ex4.js';
 import {exo5} from '../../src/js/ex5.js';
 import {exo6} from '../../src/js/ex6.js';
 
-let liens = document.querySelectorAll('.ul1 li')
+let liens = document.querySelectorAll('.ul1 a')
+let sections = document.querySelectorAll('section')
+let map = [];
 
-liens.forEach(elem => {
+for (let i = 0; i < sections.length; i++) {
+    map.push({
+        lien: liens[i],
+        exo: sections[i]
+    });
 
-    elem.addEventListener('click', () => {
-
-        for (let i = 0; i < liens.length; i++) {
-            liens[i].classList.remove('class', 'acti')
-            
-        }
-        elem.classList.add('acti')
-        console.log(elem.className)
-
-    })
-})
+    if(i != 0){
+        sections[i].style.display='none'
+    }
 
 
+    
+}
+
+
+map.forEach(e => {
+    e.lien.addEventListener('click', () => {
+        console.log(e);
+        
+        map.forEach(a => {
+            a.lien.classList.replace('text-white', 'text-primary');
+            a.lien.classList.replace('bg-primary', 'bg-white');
+            a.exo.style.display = 'none';
+        });
+
+        e.lien.classList.replace('text-primary', 'text-white');
+        e.lien.classList.replace('bg-white', 'bg-primary');
+        e.exo.style.display = 'block';
+  });
+});
+
+exo1()
+exo2()
 exo3()
+exo4()
 exo5()
 exo6()
-// function show(elementID) {
-//     // try to find the requested page and alert if it's not found
-//     var ele = document.getElementsByClassName(elementID)[0];//Exercic 1 
-//     if (!ele) {
-//         alert("no such element");
-//         return;
-//     }
-
-//     // get all pages, loop through them and hide them
-//     var pages = document.getElementsByClassName('page');
-//     for(var i = 0; i < pages.length; i++) {
-//         pages[i].style.display = 'none';
-//     }
-
-//     // then show the requested page
-//     ele.style.display = 'block';
-// }
 
 

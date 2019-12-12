@@ -177,7 +177,7 @@ body section h2 {
 #inputs7 {
   margin-top: 15px;
 }
-#inputs7 input {
+#inputs7 .inputs71 {
   border: solid #3a73f6 2px;
   border-radius: 25px;
   padding: 5px 10px;
@@ -185,7 +185,7 @@ body section h2 {
   color: #3a73f6;
   background-color: transparent;
 }
-#inputs7 input:hover {
+#inputs7 .inputs71:hover {
   background-color: #3a73f6;
   color: white;
 }
@@ -198,6 +198,7 @@ body section h2 {
   align-items: center;
   justify-content: space-between;
   margin: 30px 0;
+  padding: 10px 15px 0 15px;
 }
 .div71 input {
   margin-bottom: 12.9999px;
@@ -214,6 +215,16 @@ body section h2 {
 }
 .div71 span {
   cursor: pointer;
+  margin-bottom: 12.9999px;
+}
+
+.selection {
+  background-color: #3a73f6;
+  color: white;
+  border: solid #3a73f6 2px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

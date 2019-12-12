@@ -197,12 +197,23 @@ body section h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 30px 0;
+}
+.div71 input {
+  margin-bottom: 12.9999px;
 }
 .div71 p {
   flex: 1;
   margin: 0;
   padding: 0 0 0 20px;
+  align-items: center;
+}
+.div71 p hr {
+  margin: 0;
+  margin-top: 15px;
+}
+.div71 span {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

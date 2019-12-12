@@ -20,11 +20,8 @@ for (let i = 0; i < sections.length; i++) {
     if(i != 0){
         sections[i].style.display='none'
     }
-
-
     
 }
-
 
 map.forEach(e => {
     e.lien.addEventListener('click', () => {

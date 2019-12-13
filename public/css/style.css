@@ -12,7 +12,7 @@ body header ul a:hover {
 }
 body section {
   padding: 5% 4%;
-  background-color: #bebebe;
+  background-color: #e0e0e0a8;
   margin-bottom: 10px;
 }
 body section h2 {
@@ -113,7 +113,7 @@ body section h2 {
 #calculette {
   margin: 50px;
   display: inline-block;
-  background-color: #353535;
+  background-color: #3535358a;
   padding: 15px;
 }
 #calculette p {
@@ -135,7 +135,7 @@ body section h2 {
 #calculette .btnCalc button {
   margin: 10px;
   border-radius: 50%;
-  margin: 0;
+  margin: 5px;
   width: 40px;
   height: 40px;
   background-color: #769fff;

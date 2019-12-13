@@ -13,16 +13,15 @@ function exo7() {
     let hr;
     let tabClose = [];
     let tabCheck = [];
-
     let currentText;
 
 
     function createElem() {
         div71 = document.createElement('div')
         p = document.createElement('p')
-        p.ondblclick = function () {
-            transformToInput()
-        }
+
+        transformToInput()
+
         checkbox = document.createElement('input');
         checkbox.type = "checkbox";
         span = document.createElement('span')
@@ -34,27 +33,23 @@ function exo7() {
 
 
     function transformToInput() {
+
         tabCheck.forEach(event => {
-            console.log(event);
-            currentText.value = event.children[1].innerText
-            event.children[1].innerHTML = ''
-            event.children[1].appendChild(currentText)
-            console.log(event.children);
-
-
-
-            event.children[1].addEventListener('keypress', ev => {
-
-                if (ev.key == 'Enter' && currentText.value != '') {
-                    
-                    p = event.children[1];
-                    p.innerHTML = currentText.value
-                    event.children[1].appendChild(p)
-                    console.log(event.children);
-
-                }
-            })
-
+            event.children[1].ondblclick = function () {
+                console.log('heeellooo');
+                currentText.value = event.children[1].innerText
+                event.children[1].innerHTML = ''
+                event.children[1].appendChild(currentText)
+                console.log(event.children);
+                event.children[1].addEventListener('keypress', ev => {
+                    if (ev.key == 'Enter' && currentText.value != '') {
+                        p = event.children[1];
+                        p.innerHTML = currentText.value
+                        event.children[1].appendChild(p)
+                        console.log(event.children);
+                    }
+                })
+            }
         })
 
     }
@@ -85,10 +80,11 @@ function exo7() {
 
     function colorCheck() {
         tabCheck.forEach(elem => {
+
             //console.log(elem.children[1]);
 
             if (elem.children[0].checked) {
-                elem.style.backgroundColor = 'green'
+                elem.style.backgroundColor = '#8bec3b'
 
             } else {
                 elem.style.backgroundColor = ''
@@ -106,15 +102,9 @@ function exo7() {
                 createElem()
                 addElem()
                 deleteElem()
-
-
                 todo.value = ''
-
-
             }
         })
-
-
     })
 
 
@@ -159,15 +149,6 @@ function exo7() {
         completees.classList.add('inputs71')
         toutes.classList.add('inputs71')
     })
-
-
-
-
-    // div.addEventListener('dblclick',event =>{
-    //     console.log('sndjkvbjksbvj');
-
-    // })
-
 
 
 }

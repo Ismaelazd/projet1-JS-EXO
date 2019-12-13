@@ -13,6 +13,7 @@ function exo7() {
     let hr;
     let tabClose = [];
     let tabCheck = [];
+
     let currentText;
 
 
@@ -33,23 +34,29 @@ function exo7() {
 
 
     function transformToInput() {
-
+        console.log('heeellooo');
+        
         tabCheck.forEach(event => {
-            event.children[1].ondblclick = function () {
-                console.log('heeellooo');
+            console.log(event);
+            event.children[1].ondblclick =function () {
                 currentText.value = event.children[1].innerText
                 event.children[1].innerHTML = ''
                 event.children[1].appendChild(currentText)
                 console.log(event.children);
+
                 event.children[1].addEventListener('keypress', ev => {
+
                     if (ev.key == 'Enter' && currentText.value != '') {
+
                         p = event.children[1];
                         p.innerHTML = currentText.value
                         event.children[1].appendChild(p)
                         console.log(event.children);
                     }
                 })
+
             }
+
         })
 
     }
@@ -149,6 +156,15 @@ function exo7() {
         completees.classList.add('inputs71')
         toutes.classList.add('inputs71')
     })
+
+
+
+
+    // div.addEventListener('dblclick',event =>{
+    //     console.log('sndjkvbjksbvj');
+
+    // })
+
 
 
 }
